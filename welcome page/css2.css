@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto|Thasadith');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+body{
+    display: flex;
+    height: 100vh;
+    background-image: url(/asset/wallpaperbetter\ \(3\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family:'Poppins', sans-serif;
+}
+.center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.bio_card{
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.left{
+    margin: 0;
+    position: relative;
+    width: 400px;
+    height: 100%;
+    border-radius: 50px 0 0px 50px;
+    background: rgb(220,20,60);
+    background: linear-gradient(90deg, rgba(220,20,60,1) 0%, rgba(242,121,110,1) 100%);
+    color: #fafafa;
+}
+.left .box{
+    position: relative;
+    height: 50px;
+}
+.left .cover{
+    width: 100%;
+    height: 200px;
+    border-radius: 50px 0px 0 0;
+}
+.left .profile {
+   position: absolute;
+    top:-100px;
+    width: 150px;
+    height: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 100%;
+    border: 4px solid #fafafa;
+}
+.left h1{
+    position: relative;
+    text-align: center;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin: 20px 0;
+    padding: 55px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.left .btn{
+    z-index: 23;
+    background: rgb(220,20,60);
+    background: linear-gradient(90deg, rgba(220,20,60,1) 40%, rgba(242,121,110,1) 100%);
+    color: #fafafa;
+    text-align: center;
+    position: absolute;
+    right: calc(0% - 23px);
+    top: calc(200px - 23px);
+    width: 46px;
+    height: 46px;
+    border-radius: 100%;
+    
+}
+.left .btn i{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.right
+{
+    background-color: #fff;
+    width: 0px;
+    overflow: hidden;
+    height: 100%;
+    /**/
+     
+  
+}
+.text{
+    height: 100%;
+    padding: 15px 30px;
+    width: 450px;
+ 
+    
+}
+
+.right .title{
+    text-transform: uppercase;
+    text-overflow: ellipsis;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.right h2{
+    text-transform: uppercase;
+    margin: 5px 0;
+    font-size: 1rem;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.right h3{
+    text-transform: uppercase;
+    display: flex;
+    font-size: 1rem;
+    justify-content: center;
+    text-align: center;
+    padding-top: 15px;
+    height: 100px;
+}
+.right p{
+    line-height: 1.5rem;
+    margin: 5px 0;
+    font-size: 0.8rem;
+    margin-bottom: 12px;
+    padding: 30px;
+}
+
+
+
+.right{
+    border-radius: 0 50px 50px 0;
+}
+
+.form .form-group{
+    margin-top: 20px;
+    height: 50px;
+    width: 100%;
+    position: relative;
+}
+
+.form-group input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    font-size: 16px; 
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.form-group input:is(:hover, :focus){
+    border-bottom-color: #f2796e;
+}
+
+.form-group i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 23px;
+}
+
+.form-group input:is(:hover, :focus) ~ i{
+    color: #f2796e;
+}
+
+.form-group i.icon{
+    left: 0;
+}
+
+.form .button{
+    margin-top: 35px;
+}
+.form .button input{
+    border: none;
+    color: #ffff;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 100px;
+    background-color: crimson;
+    cursor: pointer;
+}
+
+.button input:hover{
+    background-color: #F4938B;
+}
+
+.title-login{
+    position: relative;
+    font-size: 27px;
+    font-weight: 600;
+    
+}
+
+.title-login::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background-color: rgba(220,20,60,1);
+    border-radius: 25px;
+}
+
+
+@media (max-width:768px){
+    .center{
+        flex-direction: column;
+        width: fit-content;
+    }
+
+    .bio-card{
+        width: 100%;
+    }
+}
+
+.email-font{
+    background-color: red;
+    color: white;
+    display: flex;
+    font-size: 10px;
+}

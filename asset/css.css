@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/asset/3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container{
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+.container .form{
+    padding: 30px;
+}
+
+.container .form .title{
+    position: relative;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.form .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background-color: crimson;
+    border-radius: 25px;
+}
+
+.form .form-group{
+    margin-top: 30px;
+    height: 50px;
+    width: 100%;
+    position: relative;
+}
+
+.form-group input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    font-size: 16px; 
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.form-group input:is(:hover, :focus){
+    border-bottom-color: #f2796e;
+}
+
+.form-group i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 23px;
+}
+
+.form-group input:is(:hover, :focus) ~ i{
+    color: #f2796e;
+}
+
+.form-group i.icon{
+    left: 0;
+}
+
+.form-group i.showHidePw{
+    right: 0;
+}
+
+.form .checkbox-text{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.checkbox-text .checkbox-content{
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-content input{
+    margin: 0 8px -2px 4px;
+    accent-color: crimson;
+}
+
+.form a.text{
+    color: #4070f4;
+    text-decoration: none;
+}
+.form a:hover{
+    text-decoration: underline;
+}
+
+.form .text{
+    color: #333;
+    font-size: 14px;
+}
+
+.form .button{
+    margin-top: 35px;
+}
+.form .button input{
+    border: none;
+    color: #ffff;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    background-color: #f2796e;
+    cursor: pointer;
+}
+
+.button input:hover{
+    background-color: #F4938B;
+}
+
+.form .login-signup{
+    margin-top: 30px;
+    text-align: center;
+}
+
+@media (max-width:900px){
+    .container{
+        flex-direction: column;
+    }
+
+    form, .content{
+        width: ;
+    }
+
+    .btn {
+        flex-direction: column;
+    }
+
+    .image{
+        height: 70vh;
+    }
+}
+
+@media (max-width: 425px){
+    .container{    
+        width: fit-content;
+        box-sizing: border-box;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    #text-password{
+        padding-left: 20px;
+    }
+
+    ::placeholder{
+        color: #fff
+    }
+
+    .form .text{
+        color: #fff;        
+    }
+
+    .form-group input{
+        background-color: transparent;
+    }
+
+    .title{
+        color: #fff;
+    }
+
+    .form-group i{
+        color: #fff;
+    }
+    
+    .form-group input:is(:hover, :focus) ~ i{
+        color: crimson;
+    }
+
+    .form-group input:is(:hover, :focus){
+        border-bottom-color: crimson;
+    }
+
+    input[placeholder]{
+        color: #fff;
+    }
+
+}
+

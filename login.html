@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <script src="https://kit.fontawesome.com/68b2f8294f.js" crossorigin="anonymous"></script>
+  <title>LOGIN FORM</title>
+</head>
+<body>
+  <div class="container">
+
+    <div class="content">
+      <div class="logo">
+        <img src="/asset/images/logo.svg" alt="">
+      </div>
+      <div class="image"></div>
+      <div class="text-image">
+        Start for free & get <br>
+         attractive offers Today !
+      </div>
+    </div>
+
+
+    <form role="form" onsubmit="signUp(event);" autocomplete="off" id="form">
+
+      <div id="admin1"></div>
+      <div id="admin2"></div>
+      <div id="admin3"></div>
+
+    <div class="social">
+      <div class="title">Get Started</div>
+      <div class="question">
+        Already Have an Account? <br>
+        <span>
+          <a class="a-login" href="asset/sign.html">Log In</a>
+          </span>
+      </div>
+      
+      <div class="btn">
+        <div class="btn1">
+          <img src="https://img.icons8.com/fluency/30/null/google-logo.png"/>
+          Sign Up
+        </div>
+        <div class="btn2">
+          <img src="https://img.icons8.com/ios-glyphs/30/ffffff/facebook-new.png"/>
+          Sign Up
+        </div>
+      </div>
+
+      <div class="or">Or</div>
+    </div>
+
+    <!-- /**
+     * ! username input here
+    **/ -->
+    <div class="konten">
+    <div class="form-group">
+      <label for="username">Username</label>
+      <div class="ikon">
+      <i class="fa-regular fa-user"></i>
+      <input type="text" name="username" id="username" placeholder="Enter your name" required>
+      <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+      <i class="fa-regular fa-circle-check succes-icon"></i>
+    </div>
+      <div class="error"></div>
+    </div>
+
+        <!-- /**
+     * ! email input here
+    **/ -->
+    <div class="form-group">
+      <label for="email">Email</label>
+      <div class="ikon">
+      <i class="fa-regular fa-envelope"></i>
+      <input type="text" name="email" id="email" placeholder="Enter your email" required>
+      <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+      <i class="fa-regular fa-circle-check succes-icon"></i> 
+    </div>
+      <div class="error"></div> 
+    </div>
+
+        <!-- /**
+     * ! password input here
+    **/ -->
+    <div class="form-group">
+      <label for="password">Password</label>
+      <div class="ikon">
+      <i class="uil uil-padlock"></i>
+      <input type="password" class="password" name="password" id="password" placeholder="Create a password" required>
+      <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+      <i class="fa-regular fa-circle-check succes-icon"></i> 
+    </div>
+      <div class="error"></div>   
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="password">Password</label>
+    <div class="ikon">
+    <i class="uil uil-padlock"></i>
+    <input type="password" class="password" name="password1" id="password1" placeholder="Please confirm your password" required>
+    <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+    <i class="fa-regular fa-circle-check succes-icon"></i>
+    <i class="uil uil-eye-slash showHidePw"></i> 
+  </div>
+    <div class="error"></div>   
+  </div>
+
+
+  <div class="form-group">
+  <div class="remember">
+    <div class="checkbox-container">
+      <div class="checkbox-content">
+        <input type="checkbox" id="logCheck" class="checkbox" checked>
+        <label for="logCheck" class="text-checkbox">Remember Me</label>
+      </div>
+      <a href="signup.html" class="text">Forgot Password?</a>
+    </div>
+    
+  </div>
+</div>   
+
+  <div class="form-group">
+    <button type="submit" id="submit">Register Now</button>
+  </div>
+    <!-- <button onclick="onLogout()" id="logout">Logout</button> -->
+
+  </form>
+  </div>
+  
+  <script src="main.js"></script>
+</body>
+</html>
