@@ -136,7 +136,7 @@ input:focus {
 }
 
 .image{
-    background-image: url("/asset/images/illustration.svg");
+    background-image: url("/image/1.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;

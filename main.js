@@ -85,7 +85,7 @@ const signUp = e => {
         document.querySelector('form');
         id('username').focus();
         alert("Account Created.\n\nPlease Sign In");
-        location.href = "asset/login.html"
+        location.href = "asset/index.html"
     }
     else{
         
@@ -104,7 +104,7 @@ function signIn(e) {
         alert("username or password wrong.\n\nplease login again");
     }
     else{
-        location.href = "/welcome page/welcome.html";
+        location.href = "/welcome page/index.html";
     }
     e.preventDefault();
     
