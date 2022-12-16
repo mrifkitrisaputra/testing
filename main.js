@@ -85,7 +85,7 @@ const signUp = e => {
         document.querySelector('form');
         id('username').focus();
         alert("Account Created.\n\nPlease Sign In");
-        location.href = "asset/sign.html"
+        location.href = "asset/index.html"
     }
     else{
         
