@@ -104,7 +104,7 @@ function signIn(e) {
         alert("username or password wrong.\n\nplease login again");
     }
     else{
-        location.href = "welcome page/index.html/";
+        location.href = "welcome page/index.html";
     }
     e.preventDefault();
     
