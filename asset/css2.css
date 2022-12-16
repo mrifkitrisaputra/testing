@@ -13,7 +13,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(/asset/3.jpg);
+    background-image: url(/image/3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
